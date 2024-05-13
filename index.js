@@ -12,14 +12,14 @@ const uploadRouter = require("./routes/upload.routes");
 
 
 
-mongoose.connect("mongodb://localhost:27017/savdo" || MONGODB_OFFLINE, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://abbos:salom1245!qaqnusopiy@atlascluster.1vt5ihu.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster" || MONGODB_OFFLINE, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log('Connected to MongoDB');
     })
     .catch((error) => {
         console.error('Error connecting to MongoDB:', error);
     });
-
+// salom1245!qaqnusopiy
 
 app.use(bodyParser())
 
